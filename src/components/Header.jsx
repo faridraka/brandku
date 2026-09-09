@@ -1,7 +1,12 @@
+import { Link } from "react-router"
+
 const Header = () => {
   return (
     <header>
-        <h2 className="text-center italic">Header</h2>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/about" className="text-red-500">About</Link>
+        </nav>
     </header>
   )
 }
